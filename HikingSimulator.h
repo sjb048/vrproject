@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 #include "terrain.h"
 #include "Hiker.h"
-#include "SeasonalEffect.h"
+#include "seasonEffect.h"
 #include "Skybox.h"
 #include "shader.h"
 
@@ -23,7 +23,7 @@ public:
 private:
     Terrain terrain;
     Hiker hiker;
-    SeasonalEffect seasonalEffect;
+//    seasonEffect seasonEffect;
     glm::mat4 viewMatrix;
     glm::mat4 projectionMatrix;
     glm::mat4 modelMatrix;

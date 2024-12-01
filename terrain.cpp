@@ -90,7 +90,8 @@ bool Terrain::loadTerrainData(const std::string& texturePath) {
     return true;
 }
 
-// Calculate normals for terrain vertices
+// Calculate normals for terrain vertices for realistic lighting on the terrain.
+
 void Terrain::calculateNormals() {
     normals.resize(vertices.size(), glm::vec3(0.0f));
 

@@ -49,12 +49,12 @@ bool Skybox::initialize(const std::string& directory) {
 
     // Define the cubemap faces in the correct order
     std::vector<std::string> faces = {
-        correctedDirectory + "px.png", // Right
-        correctedDirectory + "nx.png", // Left
-        correctedDirectory + "py.png", // Top
-        correctedDirectory + "ny.png", // Bottom
-        correctedDirectory + "pz.png", // Front
-        correctedDirectory + "nz.png"  // Back
+        correctedDirectory + "right.png", // Right
+        correctedDirectory + "left.png", // Left
+        correctedDirectory + "top.png", // Top
+        correctedDirectory + "bottom.png", // Bottom
+        correctedDirectory + "front.png", // Front
+        correctedDirectory + "back.png"  // Back
     };
 
     // Debugging: Print paths to verify correctness

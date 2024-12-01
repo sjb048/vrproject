@@ -1,6 +1,6 @@
 // HikingSimulator.cpp
 
-#include "HikingSimulator.h"
+#include "hikingSimulator.h"
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/string_cast.hpp>
@@ -30,7 +30,7 @@ bool HikingSimulator::initialize() {
     std::cout << "INFO: Initializing HikingSimulator..." << std::endl;
 
     // Load terrain data
-    if (!terrain.loadTerrainData("/Users/sumaia/Desktop/triangle/triangle/resources/colorsdata.png")) {
+    if (!terrain.loadTerrainData("/Users/sumaia/Desktop/triangle/triangle/resources/graydata.png")) {
         std::cerr << "ERROR: Failed to load terrain heightmap!" << std::endl;
         return false;
     }
@@ -157,7 +157,6 @@ void HikingSimulator::cleanup() {
     terrain.cleanup();
     hiker.cleanup();
     Skybox::getInstance().cleanup();
-    seasonalEffect.cleanup();
 
     std::cout << "INFO: HikingSimulator cleaned up successfully." << std::endl;
 }
